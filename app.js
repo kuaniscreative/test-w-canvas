@@ -66,6 +66,6 @@ io.on('connection', function(socket){
 	});
 });
 
-http.listen(5000, function(){
+http.listen(process.env.PORT, function(){
 	console.log('listening to port 3000');
 });
