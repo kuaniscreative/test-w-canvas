@@ -15,7 +15,7 @@ h1 {
 	position: absolute;
 	display: block;
 	top: 50%;
-	left: 7%;
+	left: 7vh;
 	font-size: 12vh;
 	transform: translate(0,-50%);
 	margin:0;
