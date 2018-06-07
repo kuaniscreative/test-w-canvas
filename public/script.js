@@ -32,7 +32,9 @@ document.getElementById('canvas-wrapper').addEventListener('click', function(eve
 	pastCircle.push(record);
 	socket.emit('new circle', JSON.stringify(record));
 })
-var radius = 30;
+/* when radius=30, css=60px=8vh */
+var radius = canvas.height/100*4;
+var padding = radius/4;
 var stampIt = function(x, y, z){
 	this.x = x;
 	this.y = y;
@@ -47,9 +49,9 @@ var stampIt = function(x, y, z){
 			c.fillStyle = 'black';
 			c.textBaseline = 'middle';
 			c.textAlign = 'center';
-			c.font = "12px helvetica";
-			c.fillText('so', x, y-7);
-			c.fillText('true', x, y+7);
+			c.font = 0.4*radius + "px helvetica";
+			c.fillText('so', x, y-padding);
+			c.fillText('true', x, y+padding);
 		} else {
 			c.beginPath();
 			c.arc(x, y, radius, 0, Math.PI*2, false)
@@ -60,7 +62,7 @@ var stampIt = function(x, y, z){
 			c.fillStyle = 'black';
 			c.textBaseline = 'middle';
 			c.textAlign = 'center';
-			c.font = "12px helvetica";
+			c.font = 0.4*radius + "px helvetica";
 			c.fillText('nah', x, y);
 		}
 	}
