@@ -19,7 +19,7 @@ canvas.width = window.visualViewport.height * 1.9;
 canvas.height = window.visualViewport.height;
 var c = canvas.getContext('2d');
 var pastCircle = [];
-canvas.addEventListener('click', function(event){
+document.getElementById('canvas-wrapper').addEventListener('click', function(event){
 	var proportionX = event.pageX / canvas.width;
 	var proportionY = event.pageY / canvas.height;
 	var circle = new stampIt(proportionX * canvas.width, proportionY * canvas.height, whichStamp);
