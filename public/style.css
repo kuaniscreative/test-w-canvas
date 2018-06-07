@@ -1,3 +1,7 @@
+* {
+margin: 0;
+padding: 0;
+}
 html, body {
 	width: 100%;
 	height: 100%;
@@ -166,3 +170,50 @@ canvas {
 	box-shadow: 0.4vh 0.4vh;
 }
 
+@media only screen and (orientation: portrait) {
+	#menu {
+		display: block;
+		position: fixed;
+		width: 100%;
+		height: 20%;
+		bottom: 0;
+		margin: 0;
+		border: 0;
+		background-color: rgba(255, 255, 255, 0.9);
+		z-index:2;
+	}	
+
+	.menu-item {
+		position: relative;
+		top: 15%;
+		width: 8vh;
+		height: 8vh;
+		padding: 2vh;
+	}
+	.menu-item span {
+		display: block;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+		font-size: 1.6vh;
+		line-height: 2vh;
+	}
+	#so-true,
+	#nah {
+		cursor: pointer;
+	}
+	#so-true{
+		float: left;
+		left: 20%;
+	}
+	#nah {
+		float: right;
+		right: 20%;
+		opacity: 0.3;
+	}
+	#cursor {
+		display: hidden;
+	}
+}
