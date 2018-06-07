@@ -15,8 +15,8 @@ socket.on('new circle', function(msg){
 
 //canvas shit
 var canvas = document.querySelector('canvas');
-canvas.width = window.visualViewport.height * 1.9;
-canvas.height = window.visualViewport.height;
+canvas.width = window.innerHeight * 1.9;
+canvas.height = window.innerHeight;
 var c = canvas.getContext('2d');
 var pastCircle = [];
 document.getElementById('canvas-wrapper').addEventListener('click', function(event){
