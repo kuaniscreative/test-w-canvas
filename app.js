@@ -3,7 +3,9 @@ var app = express();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
 var fs = require('fs');
+var compression = require('compression');
 app.use('/public', express.static('public'));
+app.use(compression());
 app.get('/', function(req, res){
 	res.sendFile(__dirname + '/index.html');
 });

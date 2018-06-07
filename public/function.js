@@ -10,6 +10,21 @@ $(document).on('mousemove', function(e){
 });
 
 var whichStamp = true;
+
+/*
+$('#so-true').on('mousedown', function(){
+  whichStamp = true;
+  $('#cursor-text').html('so</br>true');
+  $('#so-true').css('opacity', '1');
+  $('#nah').css('opacity', '0.3');
+});
+$('#nah').on('mousedown', function(){
+  whichStamp = false;
+  $('#cursor-text').html('nah');
+  $('#so-true').css('opacity', '0.3');
+  $('#nah').css('opacity', '1');
+});
+*/
 var soTrue = function(){
   whichStamp = true;
   $('#cursor-text').html('so</br>true');
