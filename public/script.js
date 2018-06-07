@@ -12,7 +12,12 @@ socket.on('new circle', function(msg){
 	var circle = new stampIt(obj.mouseX * canvas.width, obj.mouseY * canvas.height, obj.which);
 	circle.draw();
 })
-
+window.addEventListener('orientationchange', function(){
+	location.reload();
+});
+window.addEventListener('resize', function(){
+	location.reload();
+});
 //canvas shit
 var canvas = document.querySelector('canvas');
 canvas.width = window.innerHeight * 1.9;

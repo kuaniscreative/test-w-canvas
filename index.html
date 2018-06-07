@@ -6,17 +6,20 @@
 		<meta name="viewport" content="height=device-height, initial-scale=1.0">
 		-->
 		<script src='public/jquery-3.2.1.js' type='text/javascript'></script>
+		<!--
+		<script src='public/mobile-detect.min.js' type='text/javascript'></script>
+		-->
 		<script src='public/function.js' type='text/javascript'></script>
 	</head>
 	<body>
 		
 		<div id='menu'>
-			<div id='so-true' class='menu-item' onclick='soTrue()'>
-				<div id='true-circle' class='circle'></div>
+			<div id='so-true' class='menu-item'>
+				<div id='true-circle' class='circle' onclick='soTrue()'></div>
 				<span>so</br>true</span>
 			</div>
-			<div id='nah' class='menu-item' onclick='nah()'>
-				<div id='nah-circle' class='circle'></div>
+			<div id='nah' class='menu-item'>
+				<div id='nah-circle' class='circle' onclick='nah()'></div>
 				<span>nah</span>
 			</div>
 		</div>
