@@ -48,7 +48,7 @@ canvas {
 	position: relative;
 	width: 8vh;
 	height: 8vh;
-	top: 66%;
+	top: 67%;
 	padding: 2.7vh;
 	margin:auto;
 }
@@ -81,6 +81,23 @@ canvas {
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
     pointer-events: none;
+}
+#instruction {
+	display: block;
+	position: absolute;
+	top: 87%;
+	left: -21%;
+	font-size: 1.6vh;
+	word-spacing: 0.6vh;
+	transform: rotate(-90deg);
+}
+.line{
+	position: absolute;
+	height: 24vh;
+	top: 90%;
+	right: 50%;
+	border-left: 0.13vh solid black;
+	margin-top: 2vh;
 }
 /*
 .menu-item span {
@@ -192,8 +209,14 @@ canvas {
 	}	
 	.menu-item {
 		position: relative;
-		top: 15%;
+		top: 27%;
 		padding: 2vh;
+	}
+	#instruction{
+		top: 2vh;
+		left: 2vh;
+		transform: none;
+		word-spacing: normal;
 	}
 	#so-true{
 		float: left;
