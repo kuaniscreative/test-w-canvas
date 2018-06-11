@@ -48,9 +48,6 @@ io.on('connection', function(socket){
 		myWriteStream.write(json);
 		*/
 	});
-	socket.on('window changed', function(){
-		console.log('thing');
-	});
 	socket.on('disconnect', function(){
 		console.log('a user disconnected');
 	});
