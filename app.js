@@ -19,7 +19,7 @@ var circleModel = mongoose.model('circle', circleSchema);
 // connect to mongoDB
 
 mongoose.Promise = global.Promise;
-mongoose.connect(process.env.MONGOLAB_URI/*'mongodb://localhost/canvasData'*/);
+mongoose.connect("mongodb://kuan:Bb1020@ds159110.mlab.com:59110/climate-circle"/*'mongodb://localhost/canvasData'*/);
 mongoose.connection.once('open', function(){
 	console.log('connected to mongoDB');
 }).on('error', function(error){
